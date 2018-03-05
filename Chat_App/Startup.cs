@@ -35,8 +35,8 @@ namespace Chat_App
             })
             .AddTwitter(Toptions =>
             {
-                Toptions.ConsumerKey = "EyT4Jz5cMuZV9ZkQaLOpf4ZiA";
-                Toptions.ConsumerSecret = "	ziK7N1EI6axLmcO0TVtByELXIlXGC4LBuLl7rmGcUOKyb7Gvg1";
+                Toptions.ConsumerKey = "K4rGUY6SwKPcvCcm73TNFDMgr";
+                Toptions.ConsumerSecret = "7v87qSbvOu4KIAVoVzwgYgN3q3oEutE0QVjz2xnrz9CJGXSIzK";
             })
             .AddCookie();
 
