@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e531c305d00baddce899010831a73f4f436ee99a"
+    "signature": "ef66f5bbdd924b114e1bd70d3c99df3a1aa18ecd"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "WebApplication2/1.0.0": {
         "dependencies": {
+          "AspNet.Security.OAuth.VK": "0.0.1",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.AspNetCore.WebSockets": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
@@ -33,6 +34,17 @@
         },
         "compile": {
           "WebApplication2.dll": {}
+        }
+      },
+      "AspNet.Security.OAuth.VK/0.0.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OAuth": "2.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/AspNet.Security.OAuth.VK.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/AspNet.Security.OAuth.VK.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4237,6 +4249,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspNet.Security.OAuth.VK/0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jj1ZqAhWLTv+G4+SWCdMSwirwekE10LZbWocesHVaWxiOGPkFThtvG2CI47hOsJf/RLXTW3F2hf7gIGO1X9wag==",
+      "path": "aspnet.security.oauth.vk/0.0.1",
+      "hashPath": "aspnet.security.oauth.vk.0.0.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +35,14 @@ namespace WebApplication2
            {
                Foptions.AppId = "783478808509094";
                Foptions.AppSecret = "603a11fb352f6693d9185538a49943fa";
+           })
+           .AddVK(Voptions =>{
+               Voptions.ClientId = "6406580";
+               Voptions.ClientSecret = "SbqA9hn3xfcoAplU5SMv";
+               Voptions.Fields.Add("first_name");
+               Voptions.Fields.Add("last_name");
+               Voptions.ClaimActions.MapJsonKey(ClaimTypes.GivenName, "first_name");
+               Voptions.ClaimActions.MapJsonKey(ClaimTypes.Surname, "last_name");
            })
            .AddTwitter(Toptions =>
            {
